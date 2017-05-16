@@ -6,7 +6,7 @@ After=network.target
 [Service]
 EnvironmentFile=-/etc/default/snmp_exporter
 User=prometheus
-ExecStart=/usr/bin/snmp_exporter -config.path /etc/prometheus/snmp.yml
+ExecStart=/usr/bin/snmp_exporter -config.file /etc/prometheus/snmp.yml
 Restart=on-failure
 
 [Install]

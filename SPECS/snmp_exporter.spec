@@ -4,7 +4,7 @@
 
 Name:    snmp_exporter
 Version: 0.3.0
-Release: 2.vortex%{?dist}
+Release: 3.vortex%{?dist}
 Summary: SNMP Exporter for Prometheus
 License: ASL 2.0
 Vendor:  Vortex RPM
@@ -93,6 +93,9 @@ fi
 %doc _build/%{_git_slug}/CONTRIBUTING.md _build/%{_git_slug}/LICENSE _build/%{_git_slug}/NOTICE _build/%{_git_slug}/README.md _build/%{_git_slug}/MAINTAINERS.md
 
 %changelog
+* Wed May 17 2017 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.3.0-3.vortex
+- Minor init/unit fixes
+
 * Wed May 17 2017 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.3.0-2.vortex
 - Add missing snmp.yml
 - Minor init/unit fixes
