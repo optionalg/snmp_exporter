@@ -88,7 +88,7 @@ fi
 %{?el6:%{_initddir}/%{name}}
 %{?el7:/usr/lib/systemd/system/%{name}.service}
 %config(noreplace) /etc/default/%{name}
-%config(noreplace) /etc/default/snmp.yml
+%config(noreplace) /etc/prometheus/snmp.yml
 %attr(755, prometheus, prometheus)/var/lib/prometheus
 %doc _build/%{_git_slug}/CONTRIBUTING.md _build/%{_git_slug}/LICENSE _build/%{_git_slug}/NOTICE _build/%{_git_slug}/README.md _build/%{_git_slug}/MAINTAINERS.md
 
