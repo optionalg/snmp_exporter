@@ -8,7 +8,7 @@
 # Source function library.
 . /etc/rc.d/init.d/functions
 
-exec="/usr/sbin/snmp_exporter"
+exec="/usr/sbin/snmp_exporter -config.path /etc/prometheus/snmp.yml"
 prog=$(basename $exec)
 
 [ -e /etc/default/$prog ] && . /etc/default/$prog
